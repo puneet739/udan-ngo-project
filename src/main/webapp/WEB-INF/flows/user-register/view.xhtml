@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+	This is my register Page
+	
+	
+	<h:form>
+	
+		<h:outputLabel value="Name: "/><br /> 
+		<h:inputText id="name" value="#{user.name}"/>
+		<br />
+		
+		<h:outputLabel value="Age: "/><br /> 
+		<h:inputText id="age" value="#{user.age}"/>
+		<br />
+		
+<!-- 		<h:commandButton value="Submit" action="submit" execute="@form" update="@form" /> -->
+		<p:commandButton value="SubmitPrime" action="submit" execute="@form" update="@form"/>
+	
+		check
+		#{containers}
+		check2
+		#{name}
+	</h:form>
+	
+	
+</h:body>
+</html>
